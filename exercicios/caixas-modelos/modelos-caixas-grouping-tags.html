@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: khaki;
+            margin: 0px;
+        }
+        header {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+                background-color: rgb(21, 44, 44);
+                padding: 3px;
+                box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.475); 
+                /*o primeiro parâmetro é para o deslocamento horizontal, o segundo para o deslocamento vertical e o terceiro para o espalhamento e o quarto é a cor da sombra*/
+                /*após colocar essa configuração, acessar o Dev-Tools e no 'box-shadow', ao seu lado tem uma janelinha com 2 quadradrinhos; clicar nele e fazer a configuração desejada, olhando na página para ver a melhor configuração; após, copiar a configuração e colar aqui*/
+                /*a sombra deve ser sempre na cor black, porém deve ser clarinha (não pode ser uma cor sólida); para isso, selecionar na opção de transparência a mais adequada, que deve ser sempre da metade para baixo*/
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;        
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px; /*criando vértice arredondado p/ deixar a nossa página mais bonitinha*/
+            /*Pode-se tb fazer dupla configuração: 'border-radius: 20px 40px'. A primeira é p/ o vértice superior da esquerda e vértice inferior da direita; a segunda é p/ o vértice susperior da direita e vértice inferior da esquerda*/
+            box-shadow: 3px 2px 0px rgba(0, 0, 0, 0.323); /*criando sombra*/
+        }
+        article {
+            background-color: powderblue;
+        }
+        article > aside {
+            background-color: rgb(124, 83, 83);
+            padding: 1px;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%; /*criando uma bola*/
+        }
+    </style>
+</head>
+<body>
+    <!--Sugestão de criação de site de forma semântica usando tags semânticas-->
+    <header> <!--cabeçalho; não confundir com head = cabeça-->
+        <h1>Meu site</h1>
+        <nav> <!--para colocar os links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--conteúdo principal-->
+        <section id="assuntos">
+            <p>Esporte Tecnologia Política</p>
+        </section>
+        <section id-="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nemo cum? Sit illo totam hic nulla fuga, rerum sequi omnis laborum natus provident accusantium placeat repellat facilis, ipsum, enim nisi?</p>
+                <aside> <!--conteúdo periférico relacionado ao artigo-->
+                    <p>Artigo escrito por Fulano de Tal</p>
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!--rodapé-->
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * {
+            height: 100%;
+        }
+
+        body {
+            background-attachment: fixed; /*no caso do fundo estar rolando na vertical; para deixar o fundo fixo*/ 
+            background-image: linear-gradient(to bottom, #5276D1, #B4329E, #E03369,#EF5445,#F9A252)   /*para to top (para cima), precisamos incluir a configuração global '*{} e entre as chaves a configuração de altura (height). Para a direita (to right) e para a esquerda (to left) e para baixo (to bottom) não precisa; pode-se aumentar o tamanho das cores em '%', colocando um espaço depois do código da cor e a porcentagem que quer */
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradiente</h1>
+</body>
+</html>

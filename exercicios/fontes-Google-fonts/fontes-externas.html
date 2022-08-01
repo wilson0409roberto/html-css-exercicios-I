@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        /*no repositório gratuito no Google Fonts, após selecionar os styles desejados, na aba 'Selected family', selecionar '@import' e, após, selecionar o style, a partir do '@import' até o '/style', sem incluí-lo, e copiar e colocar; as fonts (como o Arial) simples geralmente não permitem a  alteração do peso e do estilo, admitindo poucas variações*/
+        body {
+            font-family: 'work Sans', Arial, Helvetica, sans-serif; /*essa font 'work Sans' não existe em nenhum computador; para ela ser usada precisa de uma linha que será colocada aqui em cima dentro do 'style'; as demais fonts são colocadas para, no caso de não haver a font 'work Sans', será utilizada a que houver*/ 
+            /*font-size: 1em;*/  /*é recomendável utilizar essa unidade 'em' ou 'px'*/
+            /*font-weight: 900;*/
+            /*opções: lighter (+ magrinha) normal bold e bolder*/
+            /*também tem as opções numéricas de 100 a 900*/
+            /*nem todas as fonts tem esses pesos*/
+            /*font-style: normal;*/
+            /*tem as opções de italic e normal*/
+            /*text-decoration: underline;*/ /*se quiser sublinhar*/
+        }
+        h1 {
+            /*font-family: 'worker Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+            /*propriedade shorthand é 'uma mãozinha' para simplificar essas 4 declarações (configurações) acima; essas 4 declarações serão condensadas numa só declaração.
+            Tem que ser rigorosamente na seguinte ordem:
+            font-style ==> font-weight ==> font-size ==> font-family (pode ser apenas uma delas, mas sendo mais de uma, colocar nessa ordem)
+            Essa propriedade não está disponível para todas as fontes*/
+            font: italic bolder 3em 'worker Sans', sans-serif;
+        }
+        h2 {
+            font: bold 2em 'worker Sans', sans-serif;
+        }
+        /*outra opção de fonts é na dafont.com*/
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, non ipsa. Beatae, nihil dolorem magnam perferendis voluptates totam ex odio dolore quasi deserunt quas sequi fugiat modi ratione dolores laborum.</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, error? Ullam quidem assumenda, dolorem deserunt iusto, at vero numquam optio necessitatibus eaque qui repudiandae libero iste recusandae dolores perspiciatis rerum.</p>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas Baixadas</title>
+    <style>
+        
+        @font-face {
+            font-family: 'Love'; /*pode ser dado qualquer nome*/
+            src: url('../fonts/love\ larry.ttf') format('truetype');
+            /*tipos de formatos:
+            . opentype (otf) - existem fonts opentype que são 'ttf'; porisso às vezes precisa pesquisar 
+            . truetype (ttf
+            . embedded-opentype
+            . truetype-aat (aat = Apple Advance Typography)
+            . svg
+            - no explorador podemos verificar o tipo de formato ao colocar o mouse sobre o nome do arquivo que contém a font
+            */
+            font-weight: normal;
+            font-style: normal;
+        } 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: Love, 'Times New Roman', Times, serif;
+            /*o nome da fonte 'Love' tem que ser igual ao que foi designado no '@fonte-fac' acima*/
+            font-size: 3em;
+        }
+    </style>
+    <!--existem várias sites para obter fontes externas; o 'dafont.com' é um deles. Verificar se a font escolhida contém todos os grifos (maiuscúla, minúscula, 'a' com acento, 'a' com crase), principalmente acentuação; para saber, basta clicar na font que aparecerão todas as características dela-->
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati exercitationem similique ullam deserunt expedita, perferendis enim! Optio recusandae, maxime numquam iusto doloribus quo distinctio, cumque fugit sint aperiam perferendis facere?</p>
+</body>
+</html>
