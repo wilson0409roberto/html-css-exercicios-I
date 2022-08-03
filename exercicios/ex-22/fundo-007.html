@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png); /*colocamos essa image apenas para focalizar o centro do container*/
+            background-size: 100% 100%;
+            position: relative; /*por padrão ele já é 'relative; colocado apenas p/ ser explícito*/
+            height: 94vh; /*para cobrir 94% da tela de exibição*/
+            padding: 10px; /*colocamos inicialmente esse 'padding' para afastar da lateral esquerda e direta e encima */
+            background-color: purple;
+        }
+        #conteudo {
+            position: absolute; /*para centralizar incluímos esse 'position relative', acrescentamos o 'left' e o 'top' em 50% e o 'transform translate' em -50, -50*/
+            height: 200px; /*deixamos essa altura menor que a do container;*/
+            width: 400px;
+            background-color: yellow;
+            /*margin: auto; se fosse alinhar horizontalmente*/
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+        
+        </article>
+    </section>
+</body>
+</html>
