@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*'attachment' (significa vínculo); o 'scroll' é o padrão (o fundo rola com o conteúdo); o 'fixed' o fundo fica fixo quando rolamos a tela
+            Podemos colocar esses backgrounds em 'short-hand' (numa declaração só na sgte. ordem: color, image, position, repeat, size (este ainda não está funcionando) e attachment)*/
+            background: black url(imagens/wallpaper002.jpg) center top no-repeat fixed;
             background-size: cover; /*pode ser 'auto' (automático), '100%' ou 'px', 'contain' (100% da tela) e o 'cover' (que cobre a tela inteira*; tem ficar testando qual o melhor, que não deixa barras laterais ou encima e embaixo*/
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -27,6 +30,10 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium magnam, natus animi ab quo molestias quidem dicta quod harum porro ratione, tempore iusto sint repellendus qui quasi. Et, alias? Obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis suscipit corporis non quisquam cupiditate praesentium at, enim inventore culpa quas voluptates dolor sapiente fugit fuga, numquam ipsa nobis soluta esse!Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt vel possimus reiciendis. Amet consequuntur aspernatur, molestias aperiam et doloribus facere nam magnam, expedita, minima eaque deserunt beatae voluptates vero!
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium magnam, natus animi ab quo molestias quidem dicta quod harum porro ratione, tempore iusto sint repellendus qui quasi. Et, alias? Obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis suscipit corporis non quisquam cupiditate praesentium at, enim inventore culpa quas voluptates dolor sapiente fugit fuga, numquam ipsa nobis soluta esse!Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt vel possimus reiciendis. Amet consequuntur aspernatur, molestias aperiam et doloribus facere nam magnam, expedita, minima eaque deserunt beatae voluptates vero!
+        </p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium magnam, natus animi ab quo molestias quidem dicta quod harum porro ratione, tempore iusto sint repellendus qui quasi. Et, alias? Obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis suscipit corporis non quisquam cupiditate praesentium at, enim inventore culpa quas voluptates dolor sapiente fugit fuga, numquam ipsa nobis soluta esse!Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt vel possimus reiciendis. Amet consequuntur aspernatur, molestias aperiam et doloribus facere nam magnam, expedita, minima eaque deserunt beatae voluptates vero!
         </p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium magnam, natus animi ab quo molestias quidem dicta quod harum porro ratione, tempore iusto sint repellendus qui quasi. Et, alias? Obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis suscipit corporis non quisquam cupiditate praesentium at, enim inventore culpa quas voluptates dolor sapiente fugit fuga, numquam ipsa nobis soluta esse!Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt vel possimus reiciendis. Amet consequuntur aspernatur, molestias aperiam et doloribus facere nam magnam, expedita, minima eaque deserunt beatae voluptates vero!
