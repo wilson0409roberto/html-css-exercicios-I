@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        /*foram incluídos no 'iframe' o 'width' e o 'height' no 'body', mas prevalem os que foram definidos aqui*/
+    </style>
+</head>
+<!--https://www.youtube.com/watch?v=GWULnkTnapM&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT&index=2-->
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>Acessando o site do <iframe src="https://cursoemvideo.com" frameborder="0" height="450" scolling="no"> <a href="https://cursoemvideo.com" target="_blank">CursoemVideo</a></iframe> para a aprender a programar.</p>
+    <p>O repositório do <iframe src="https://gustavoguanabara.github.io" frameborder="0" width="500"> no <a href="https://gustavoguanabara.github.io" target="_blank">GitHub</a></iframe> Guanabara também é bem legal.</p>
+    <!--Tamanho padrão do 'iframe': 350 x 150 [px (não é digitada essa unidade na linha de comando) (width/height)]-->
+    <!--o parâmetro 'scolling="no"' (barra de rolagem da tela) em alguns navegadores não funciona, como no Chrome e no Windows; o padrão é 'auto' e tem tb o "yes"-->
+    <!--o parâmetro -'frameborder' aceita as opções '0' e qualquer outro número (a opção '0' tira a borda; qualquer outro número põe a borda-->
+    <!--foi incluído o link 'a' p/, caso o navegador do dispositivo móvel não tenha suporte para o iframe, se utilizará esse link; poderia ser colocado no lugar desse link, uma mensagem de que o navegador não é compatível-->
+</body>
+</html
