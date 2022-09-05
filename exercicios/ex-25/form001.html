@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <!--'action="cadastro.php"': é p/ onde vai os dados, o.s, p alguma linguagem de programação, que no caso é p/ o 'php', após clicar em 'Enviar' e em 'enter; vai precisar escrever um script, que será feito posteriormente'-->
+        <!--'autocomplete="off": p/ desligar as sugestões de nome e sobrenomes-->
+        <p><label for="inome">Nome</label><input type="text" name="nome" id="inome"></p>
+        <!--diferença entre o 'name' e o 'id': o 'name' para todos os campos de entradas (input) é p/ uso da linguagem 'php' e p/ o HTML e o 'id' é mais p/ o uso da linguagem javascript-->
+        <!--'label' = etiqueta que serve p/ relacionar o formulário e o seu nome; apenas para reforçar que foi usado o 'id' e não o 'name', foi atribuído 'inome' p/ o 'id'-->
+        <p><label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
