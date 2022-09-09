@@ -8,8 +8,9 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <!--'action="cadastro.php"': é p/ onde vai os dados, o.s, p alguma linguagem de programação, que no caso é p/ o 'php', após clicar em 'Enviar' e em 'enter; vai precisar escrever um script, que será feito posteriormente'-->
+        <!--há 2 'method': get (padrão) e post; no 'get' aparece na URL os dados registrados no formulário; no 'get' não aparece na URL, porém esses dados aparecem no DevTools/Network/Name (nome atribuído no action do form)/Payload, assim que colocarmos os dados e clicar no 'Enviar'; assim, para que haja segurança é necssário criptografar, usando 'https', que é o outro tipo de protocolo para transmissão de dados-->
         <!--'autocomplete="off": p/ desligar as sugestões de nome e sobrenomes-->
         <p><label for="inome">Nome</label><input type="text" name="nome" id="inome"></p>
         <!--diferença entre o 'name' e o 'id': o 'name' para todos os campos de entradas (input) é p/ uso da linguagem 'php' e p/ o HTML e o 'id' é mais p/ o uso da linguagem javascript-->
