@@ -8,14 +8,21 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--no 'method=post' os dados preenchidos no formulário não aparecerão na URL-->
+        <!--no 'autocompelete=on' aparecerá a sugestão de texto que poderá facilitar no preenchimento do formulário; será necessário em cada caixa definir do que se trata a caixa através do atributo 'autocomplete'-->
         <p> 
             <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
+            <!--o atributo 'required' não permitirá que a caixa fique em branco, será alertado p/ preencher o campo-->
+            <!--os atributos 'minlength' e 'maxlength' definirá a quantidade mínima e máxima de letras; se inferior à mínima será alertado para aumentar o texto e se maior que o máximo só será considerado a quantidade definida de letras-->
+            <!--'size="10"' é a quantidade de letras que a caixa admitirá; caso o 'maxlength' seja maior que esse tamanho, o texto será aceito, porém só aparecerá a parte do texto definido na quantidade-->
+            <!--o atributo 'placeholder' é uma dica do que deve ser preenchido na caixa; ele aparecerá na caixa com uma cor mais clara-->
+            <!--no 'autocomplete' será selecionada a opção mais adequada com o conteúdo da caixa-->
         </p>
         <p>
             <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen" required>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="8" size="10" placeholder="digite sua senha" autocomplete="current-password" >
         </p>
         <p>
             <input type="submit" value="Enviar">
