@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+        <!--tag 'fieldset' (grupo de campos) para agrupar as caixas de nome, e-mail e telefone-->
+            <legend>Dados Pessoais</legend>
+            <!--tag 'legend' p/ definir nome para o agrupamento-->
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="20">
+            </p>
+            <p>
+                <label for="ie-mail">E-mail</label>
+                <input type="email" name="e-mail" id="ie-mail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel-national" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
+            </p>
+        </fieldset>
+        <!--atributo 'pattern' (padrão), para definir a quantidade de dígitos referente ao número do telefone e como deve ser preenchido na caixa do formulário; no caso, 2 digítos para o DDD entre parenteses, 4 (telefone fixo) ou 5(telefone ceular) dígítos seguido do hífen e mais 4 digítos-->
+        <!--ESTUDAR MAIS SOBRE RegEx (expressões regulares)-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
