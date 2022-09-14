@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos color, range e file em HTML</title>
+</head>
+<body>
+    <!--obs.: os elementos abaixo podem variar de acordo com o navegador; assim, é altamente recomendável fazer teste nos diversos navegadores (Chrome, Edge, etc.), principalmente componentes de formulários que podem funcionar de forma diferentte de um navegador para outro-->
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="3">
+            <!--'value="3"', foi fixado como padrão, o.s., ele fixa no 3; tanto pode diminuir como aumentar dentro do 'min' e 'max' fixados-->
+        </p>
+        <p>
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+            <!--quando usar esse elemento, o 'method', no 'form' tem que ser 'get' para possibilitar o envio-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
