@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio button em HTML</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas"> <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">feminino</label>
+            <!--o 'label' é para permitir que na página, ao clicar na opção, ele seja selecionado; se não houver ele, teria que clicar no quadradinho para selecionar-->
+            <!--foi dado o name para os dois 'inputs' para permitir que, ao selecionar um deles e caso seja errado, ao clicar na outra opção ele considerará esta última-->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfu" id="iesfu"> <label for="iesfu">Futebol</label> <br>
+            <input type="checkbox" name="esna" id="iesna"> <label for="iesna">Natação</label> <br>            
+            <input type="checkbox" name="esju" id="iesju"> <label for="iesju">Judô</label> <br>            
+            <input type="checkbox" name="esba" id="iesba"> <label for="iesba">Basquete</label> <br>            
+            <input type="checkbox" name="este" id="ieste"> <label for="ieste">Tênis</label> <br>            
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
