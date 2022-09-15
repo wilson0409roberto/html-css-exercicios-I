@@ -7,10 +7,43 @@
     <title>Select, datalist e textarea em HTML</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="on">
-
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <!--recomenda-se colocar o 'method="post"' porque no method="get" é limitado a 3.000 bytes-->
         <p>
-            input
+            <label for="ies">Estado</label>
+            <select name="estado" id="ies">
+                <option value="#">---Escolha---</option>
+                <!-- se quisermos que um determinado estado apareça como estado selecionado, basta incluir o atributo 'selected' na tag 'option' correspondente-->
+                <optgroup label="Região Nordeste">
+                <option value="PB">Paraíba</option>
+                <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP"> São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Administrador</option>
+                    <option>Desenvolvedor</option>
+                    <option>Professor</option>
+                </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
 
 
