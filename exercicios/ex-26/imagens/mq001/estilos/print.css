@@ -19,4 +19,3 @@ article::after {
     content: "Esse artigo foi impresso através do site www.cursoemvideo.com";
     /*p/ aparecer na página de impressão a origem do site em que foi obtido o artigo*/
 }
-
