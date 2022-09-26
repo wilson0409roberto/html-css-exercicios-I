@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--obter o icon do menu dinâmico (menu hamburguer p/ poder encolher ou aumentar o menu) no https://fonts.google.com/icons; para incorporar a fonte do ícone no site, após clicar no menu será aberto uma janela ao lado, e no 'ico font' clicar em 'instructions'; será aberto o 'Guia dos ícones do Material Design' onde apresentará 2 métodos; foi utilizado o método 1; continuando na página aparecerá "Como usar os ícones em HTML", onde tem outra linha de comando para ser colocado no 'header'; alterr nessa linha de comando de 'face' (ficaria uma carinha e não os 3 traços) para 'menu'-->
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="#">
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <header>
         <h1>Meu Site</h1>
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <!--aqui pode ser colocado qualquer ícone, alterando o nome de 'menu' para o nome do ícone desejado (obtido através do fonts.Google)-->
+        <!--p/ configurar o ícone, precisar atribuir um 'id', no caso 'burguer'-->
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -33,15 +36,6 @@
         </article>
     </main>
     <script>
-
-        function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
@@ -51,4 +45,4 @@
         }
     </script>
 </body>
-</html>
+</html>k

@@ -8,24 +8,39 @@ html, body {
     background-color: lightgray;
 }
 header {
-    background-color: rgb(145, 145, 145);
+    background-color: rgb(148,148,148);
 }
 header h1 {
     padding: 10px;
     text-align: center;
 }
+span#burguer {
+    background-color: rgb(53, 52, 52);
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    /*p/ cursor virar uma mãozinha*/
+}
+span#burguer:hover {
+    background-color: white;
+}
 menu {
     display: none;
+    /*era 'display: block'; colocado 'none' para desaparecer as opções de 1 a 5, que estavam aparecendo na página*/
+    /*por enquando não estão aparecendo as opções, quando clicamos no menu; para JavaScript, incluindo no 'span' o 'onclick'*/
 }
 menu > ul {
     list-style-type: none;
 }
-menu > ul > list > a {
+menu > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: white;
+    background-color: rgb(87, 87, 87);
+    color: white;
     border-top: 2px solid gray;
 }
 menu > ul > li > a:hover {
