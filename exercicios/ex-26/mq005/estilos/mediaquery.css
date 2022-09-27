@@ -1,4 +1,4 @@
-charset "UTF-8";
+@charset "UTF-8";
 /* Typical Device Breakpoints
 ------------------------------
 Pequenas telas: até 600px
@@ -8,16 +8,20 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 @media screen and (min-width: 768px) {
-    i#burguer {
+    span#burguer {
         display: none;
+        /*p/ esconder o 'hamburguinho' quando for para telas maiores que a do celular; com isso tb vai esconder o menu, sendo necessário e**ntão uma linha de cmd p/ o 'menu'*/
     }
     menu {
         display: block;
+        /*ao criar essa linha de cmd o 'hamburguinho' esconde e se aumentarmos a viewport, a partir de 768px o menu aparece, porém se clicarmos no 'hamburguinho', quando a viewport está com menor de 768px, aparece as opções, mas se aumentarmos após esse procedimento as opções desaparecem a partir de 768px; para resolver esse problema temos que usar o JavaScript*/
     }
     menu > ul > li {
         display: inline-block;
+        /*p/ fazer com que menu fique 'in line' e não um abaixo do outro; se quiser aumentar cada botão basta criar o cmd 'width' e definir o tamanho desejadok*/
     }
     main {
         width: 768px;
+        /*quando na tela grande o texto fica muito largo necessitando definir um tamanho fixo na largura*/
     }
 }

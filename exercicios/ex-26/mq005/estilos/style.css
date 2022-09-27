@@ -14,6 +14,9 @@ header h1 {
     padding: 10px;
     text-align: center;
 }
+header > menu {
+    padding: 5px;
+}
 span#burguer {
     background-color: rgb(53, 52, 52);
     color: black;
