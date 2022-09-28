@@ -14,12 +14,9 @@ header h1 {
     padding: 10px;
     text-align: center;
 }
-header > menu {
-    padding: 5px;
-}
-span#burguer {
+header > span#burguer {
     background-color: rgb(53, 52, 52);
-    color: black;
+    color: white;
     display: block;
     /*p/ permitir a centralização do 'hamburguinho', através da linha 'text-align*/
     text-align: center;
@@ -27,9 +24,10 @@ span#burguer {
     cursor: pointer;
     /*p/ cursor virar uma mãozinha*/
 }
-span#burguer:hover {
+header > span#burguer:hover {
     background-color: white;
     /*p/ quando clicar no 'hamburguinho' a caixa fique na cor branca*/
+    color: black;
 }
 menu {
     display: none;
@@ -38,6 +36,7 @@ menu {
 }
 menu > ul {
     list-style-type: none;
+    /*p/ tirar as bolinhas que estavam antes de cada opção*/
 }
 menu > ul > li > a {
     display: block;
@@ -50,6 +49,7 @@ menu > ul > li > a {
     background-color: rgb(87, 87, 87);
     color: white;
     border-top: 2px solid gray;
+    /*p/ colocar uma borda encima de cada opção*/
 }
 menu > ul > li > a:hover {
     background-color: gray;    
