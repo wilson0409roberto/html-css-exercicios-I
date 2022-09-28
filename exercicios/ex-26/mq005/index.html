@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
 <body onresize="mudouTamanho()">
-    <!--p/ resolver o problema do menu que não aparece quando clicamos no 'hamburguinho' e, após, aumentamos o tamanho da viewport desaparecendo as opções, utilizamos o JavaScript p/ monitorar o tamanho da tela, através do evento 'onresize', e criamos o 'script' abaixo-->
+    <!--p/ resolver o problema do menu que não aparece quando clicamos no 'hamburguinho' e, após, aumentamos o tamanho da viewport desaparecendo as opções, utilizamos o JavaScript p/ monitorar o tamanho da tela, através do evento 'onresize', e criamos o 'script' no final-->
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
         <!--aqui pode ser colocado qualquer ícone, alterando o nome de 'menu' para o nome do ícone desejado (obtido através do fonts.Google)-->
-        <!--p/ configurar o ícone, precisar atribuir um 'id', no caso 'burguer'-->
+        <!--p/ configurar o ícone, precisa atribuir um 'id', no caso 'burguer'-->
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
@@ -37,14 +37,6 @@
         </article>
     </main>
     <script>
-        function mudouTamanho() {
-            if (itens.style.display == 768) {
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-        /* esta 'function' é p/ monitorar o tamanho da tela e não esconder as opções quando abrimos o menu na viewport até 768px, nas telas a partir desse tamanho*/
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
@@ -52,6 +44,14 @@
                 itens.style.display = 'block'
             }
         }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        /* esta 'function' é p/ monitorar o tamanho da tela e não esconder as opções quando abrimos o menu na viewport até 768px, nas telas a partir desse tamanho*/
     </script>
 </body>
 </html>

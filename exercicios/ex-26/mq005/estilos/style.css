@@ -21,6 +21,7 @@ span#burguer {
     background-color: rgb(53, 52, 52);
     color: black;
     display: block;
+    /*p/ permitir a centralização do 'hamburguinho', através da linha 'text-align*/
     text-align: center;
     padding: 10px;
     cursor: pointer;
@@ -28,20 +29,24 @@ span#burguer {
 }
 span#burguer:hover {
     background-color: white;
+    /*p/ quando clicar no 'hamburguinho' a caixa fique na cor branca*/
 }
 menu {
     display: none;
     /*era 'display: block'; colocado 'none' para desaparecer as opções de 1 a 5, que estavam aparecendo na página*/
-    /*por enquando não estão aparecendo as opções, quando clicamos no menu; para JavaScript, incluindo no 'span' o 'onclick'*/
+    /*por enquando não estão aparecendo as opções, quando clicamos no menu; com JavaScript, incluido no 'span' o 'onclick'*/
 }
 menu > ul {
     list-style-type: none;
 }
 menu > ul > li > a {
     display: block;
+    /*p/ colocar o menu na vertical*/
     padding: 10px;
     text-decoration: none;
+    /*p/ retirar o sublinhado*/
     text-align: center;
+    /*p/ centralizar o menu*/
     background-color: rgb(87, 87, 87);
     color: white;
     border-top: 2px solid gray;
