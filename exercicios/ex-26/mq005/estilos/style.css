@@ -14,7 +14,7 @@ header h1 {
     padding: 10px;
     text-align: center;
 }
-header > span#burguer {
+span#burguer {
     background-color: rgb(53, 52, 52);
     color: white;
     display: block;
@@ -24,7 +24,7 @@ header > span#burguer {
     cursor: pointer;
     /*p/ cursor virar uma mãozinha*/
 }
-header > span#burguer:hover {
+span#burguer:hover {
     background-color: white;
     /*p/ quando clicar no 'hamburguinho' a caixa fique na cor branca*/
     color: black;
